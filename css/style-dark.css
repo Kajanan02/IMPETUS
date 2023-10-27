@@ -799,7 +799,7 @@ span, a, a:hover {
   position: relative;
   text-align: center;
 }
-.team .item::after {
+  .team .item::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -808,16 +808,20 @@ span, a, a:hover {
   top: 0;
   background: #111;
   background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
-  background: linear-gradient(to top, #000, transparent);
+  background: linear-gradient(to top, #000, #0000007a);
   -webkit-transition: all .4s;
   transition: all .4s;
   opacity: .7;
 }
 .team .item:hover::after {
+  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.11));
+}
+.team .item::after {
   opacity: 1;
 }
-.team .item:hover .info {
+.team .item .info {
   bottom: 30px;
+  padding: 16px;
 }
 .team .info {
   color: #fff;
@@ -838,6 +842,10 @@ span, a, a:hover {
 .team .info span {
   font-weight: 600;
   color: #f53656;
+}
+.ieee-logo{
+  width: 300px;
+  margin-top: 24px;
 }
 .team .info .social a {
   font-size: 12px;
@@ -1235,6 +1243,12 @@ footer p {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.fs-26{
+    font-size: 26px !important;
+}
+.fs-20{
+    font-size: 20px !important;
 }
 
 /* ----------------------------------------------------------------
