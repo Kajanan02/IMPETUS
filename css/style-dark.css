@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-p {
+p,li {
   font-size: 15px;
   font-weight: 300;
   color: #999;
@@ -180,6 +180,12 @@ span, a, a:hover {
   margin-bottom: 80px;
   padding-bottom: 20px;
   position: relative;
+}
+.mt-60{
+  margin-top: 60px;
+}
+.wow{
+  list-style: inside;
 }
 .section-head::after {
   content: '';
