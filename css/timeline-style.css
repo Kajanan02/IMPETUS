@@ -146,3 +146,8 @@
     left: 0%;
   }
 }
+.wow-2 {
+  list-style: inside;
+  list-style-position: outside;
+  margin-left: 32px;
+}

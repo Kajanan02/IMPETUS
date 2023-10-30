@@ -184,8 +184,13 @@ span, a, a:hover {
 .mt-60{
   margin-top: 60px;
 }
+.mt-80{
+  margin-top: 80px;
+}
 .wow{
   list-style: inside;
+  list-style-position: outside;
+  margin-left: 24px;
 }
 .section-head::after {
   content: '';
@@ -493,7 +498,11 @@ span, a, a:hover {
 
 .logo {
   padding: 15px 0;
-  width: 90px;
+  width: auto;
+}
+.logo-txt{
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 /* ----------------------------------------------------------------
