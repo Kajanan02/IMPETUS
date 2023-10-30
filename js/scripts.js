@@ -57,14 +57,18 @@ $(function() {
 
 
     // close navbar-collapse when a  clicked
-    $(".navbar-nav a").on('click', function () {
+    $(".navbar-nav .clicked").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
 
+    const icon = document.querySelector('.dropdown-item .active');
+    const btn = icon.parentNode;
+    btn.style.background = "red";
 
-/* ----------------------------------------------------------------
-                [ Progress Bar ]
------------------------------------------------------------------*/
+
+    /* ----------------------------------------------------------------
+                    [ Progress Bar ]
+    -----------------------------------------------------------------*/
 
     wind.on('scroll', function () {
         $(".skill-progress .progres").each(function () {

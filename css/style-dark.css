@@ -1259,6 +1259,32 @@ footer p {
 .fs-20{
     font-size: 20px !important;
 }
+.drop-down-box{
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border-bottom: 4px solid transparent;
+  background: #191919;
+  /*-webkit-transition: all .4s;*/
+  /*transition: all .4s;*/
+  color: white !important;
+  font-family: 'Oswald', sans-serif;
+  padding: 0 9px;
+  cursor: pointer;
+}
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #191919 !important;
+
+}
+.dropdown-item.active, .dropdown-item:active a{
+  border-bottom: 1px solid #f53656 !important;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  color: #f53656 !important;
+}
+.dropdown-item:hover, .dropdown-item:hover a{
+  background-color: #f8f9fa !important;
+}
 
 /* ----------------------------------------------------------------
      [ End Footer ]
@@ -1374,6 +1400,28 @@ footer p {
     width: 35%;
   }
 
+  .dropdown.custom:hover .dropdown-menu {
+    visibility: visible;
+    display:block;
+    border-radius:0;
+
+  }
+  .nav>li>a.dropdown-toggle {
+    display: none;
+  }
+  .nav .dropdown-menu {
+    display:block;
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+  }
+
   .butn {
     padding: 12px 20px;
     margin-left: 2px;
@@ -1387,6 +1435,12 @@ footer p {
   .header .caption h1 {
     font-size: 50px;
     line-height: 1.4;
+  }
+  .m-none{
+    display: none;
+  }
+  .drop-down-box{
+    text-align: center;
   }
 
   .hero .intro h3, .numbers .text h3 {
@@ -1434,6 +1488,9 @@ footer p {
   .numbers .text h3 {
     font-size: 20px;
   }
+  .dropdown-item.active, .dropdown-item:active{
+    border: none !important;
+  }
 
   .portfolio .filtering span {
     margin: 0;
@@ -1445,5 +1502,16 @@ footer p {
     height: 180px;
   }
 }
+
+.dropdown-toggle{
+  /*color: black !important;*/
+}
+
+.dropdown:has(> .dropdown-menu a.active) .dropdown-toggle{
+border-bottom: 1px solid #f53656 !important;
+  transition: 0.5s ease-in-out;
+}
+
+
 
 /*# sourceMappingURL=style-dark.css.map */
