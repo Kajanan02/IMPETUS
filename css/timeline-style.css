@@ -99,11 +99,31 @@
   transition: all .4s;
 }
 .left .content{
+  border-left: 1px solid red !important;
+}
+.right .content{
+  border-right: 1px solid red !important;
+}
+.left .content{
   width: max-content;
   left: -109px;
 }
 .right .content{
     width: max-content;
+}
+
+
+.left-120{
+  left: -120px !important;
+}
+.left-194{
+  left: -194px !important;
+}
+.left-134{
+  left: -134px !important;
+}
+.left-86{
+  left: -86px !important;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -139,12 +159,32 @@
   .right .content{
     width: inherit;
   }
+  .left-120{
+    left: 0px !important;
+  }
+  .left-194{
+    left: 0px !important;
+  }
+  .left-134{
+    left: 0px !important;
+  }
+  .left-86{
+    left: 0 !important;
+  }
+
+  .left .content{
+    border-right: 1px solid red !important;
+    border-left: none !important;
+  }
 
 
   /* Make all right container2s behave like the left ones */
   .right {
     left: 0%;
   }
+}
+.top-2{
+  top: 2px;
 }
 .wow-2 {
   list-style: inside;
