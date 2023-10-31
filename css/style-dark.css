@@ -890,6 +890,9 @@ span, a, a:hover {
   background-color: #191919;
   position: relative;
 }
+.bg-111{
+  background-color: #111;
+}
 .team .skills .skill-progress .progres {
   position: absolute;
   height: 100%;
@@ -899,6 +902,9 @@ span, a, a:hover {
   background-color: #f53656;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+}
+.w-200{
+  width: 200px;
 }
 .team .skills .skill-progress .progres:after {
   content: attr(data-value);
