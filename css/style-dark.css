@@ -906,6 +906,7 @@ span, a, a:hover {
 .w-200{
   width: 200px;
 }
+
 .team .skills .skill-progress .progres:after {
   content: attr(data-value);
   padding: 2px 4px;
