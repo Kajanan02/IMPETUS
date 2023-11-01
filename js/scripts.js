@@ -51,7 +51,7 @@ $(function() {
         }else{
 
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.svg');
+            logo.attr('src', 'img/logo-white-65428be459f0f.webp');
         }
     });
 
