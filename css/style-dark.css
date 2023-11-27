@@ -1650,4 +1650,14 @@ border-bottom: 1px solid #f53656 !important;
   background: #fff;
 }
 
+.sponsors-img{
+  width: 320px;
+}
+
+@media screen and (max-width: 767px) {
+  .sponsors-img{
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style-dark.css.map */
